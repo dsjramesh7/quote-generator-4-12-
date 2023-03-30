@@ -1,8 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  /* background: rgb(36,30,0); */
-  background: linear-gradient(90deg, rgba(36,30,0,1) 0%, rgba(250,46,1,1) 0%, rgba(241,255,0,1) 100%);
+  background: linear-gradient(-120deg, rgba(36,30,0,1) 0%, rgba(250,46,1,1) 0%, rgba(241,255,0,1) 100%);
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -12,27 +11,41 @@ body{
 
 .container{
   /* border: 1px solid black; */
-  padding: 20px;
+  padding: 25px;
   width: 90%;
+  margin: 10px;
   max-width:500px;
-  display: flex;
+
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+
+  /* or for this case i can use this too... */
+
+  text-align: center;
   box-shadow: 0 6px 13px;
   border-radius: 10px;
 }
 
+.container>.heading{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  text-shadow: 0 6px 15px;
+}
+
 .container>.btn{
   width: 80%;
-  height: 35px;
+  height: 45px;
   width: 300px;
   text-transform: uppercase;
-  background-color: darksalmon;
+  background-color: rgba(255,255,255,0.3);
   color: white;
   font-size: medium;
   font-weight: 700;
   border-radius: 15px;
+  border-color: rgba(255,255,255,0.6) ;
 }
 
 .container>.btn:hover{
@@ -40,6 +53,18 @@ body{
   cursor: pointer;
   color: yellowgreen;
   transition: all 350ms ease;
+}
+
+.container>.quote{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.container>.author{
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 
